@@ -20,7 +20,7 @@ public class Cls40_SoftAssertion {
 		// TODO Auto-generated method stub
 		WebDriver driver= new FirefoxDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice");
-
+        
 		SoftAssert a= new SoftAssert();
 		
 		List<WebElement> links= driver.findElements(By.cssSelector("li[class='gf-li'] a"));
