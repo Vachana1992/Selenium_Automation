@@ -34,8 +34,13 @@ public class Cls44_InvokingMultipleTabs {
 		name.sendKeys(coursename);
 		
 		//Taking screenshot
-		File file= name.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File("logo.png"));
+//		File file= name.getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(file, new File("logo.png"));
+		
+		//Get height and width of the web element
+		System.out.println(name.getRect().getDimension().getHeight());
+		System.out.println(name.getRect().getDimension().getWidth());
+		
 		
 		
 	}
